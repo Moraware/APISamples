@@ -1,2 +1,2 @@
 # APISamples
-Samples using the JobTracker API
+Snippets/Code samples using the JobTracker API
