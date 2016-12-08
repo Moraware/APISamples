@@ -32,3 +32,6 @@
 
             // Now create the actual product line (which adds it to the db - you can refresh the UI to see it)
             var poplid = conn.CreatePurchaseOrderProductLine(popl); // poplid can be used to find the line again to change it
+
+            // If the product is serialized, then you can get serial numbers before receiving them
+            var usns = conn.CreateUnreceivedSerialNumbers(poplid);
