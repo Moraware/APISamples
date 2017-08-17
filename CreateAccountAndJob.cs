@@ -11,7 +11,7 @@
             if (acts.Count == 0) {
                 // account doesn't exist, so create it
                 a = new Account(accountName);
-                accountId = conn.CreateAccount(a);
+                accountId = conn.CreateAccount(a); // this is what writes to the db and causes the object to exist online
             }
             else if (acts.Count == 1) {
                 // account exists, so use it
@@ -37,7 +37,7 @@
             j.CustomFieldValues.SetFieldValue(597, "S12345"); // I simply did a View Page Source on the custom fields page to figure out what the id of a custom field was in my system
                                                               // yours will be different
                                                               // to be precise, call conn.GetCustomJobFieldTypes (false) and explore the results
-            jobID = conn.CreateJob(j);
+            jobID = conn.CreateJob(j); // this is what writes to the db and causes the object to exist online
 
             // note, you can add the jobId onto your URL to get a link to the job
             // https://patrick.moraware.net/d.aspx?wp=2&jobId=
