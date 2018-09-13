@@ -1,6 +1,7 @@
             // Example of using GetPurchaseOrdersOfJobs
             // This method exists starting in Version 5 of the JobTracker API
             // Prior to Version 5, there was no way to get this information from the API
+            // See also GetJobsOfPurchaseOrders
 
             // var DB = "yourdatabasename";
             var JTURL = "https://" + DB + ".moraware.net/";
