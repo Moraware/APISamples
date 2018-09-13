@@ -10,7 +10,7 @@
             Connection conn = new Connection(JTURL + "api.aspx", UID, PWD);
             conn.Connect();
 
-            int templateId = 1111;
+            int templateId = 1111; // a random form template from my database. Yours will be different
 
             var formTemplate = conn.GetFormTemplate(templateId, true);
             foreach (var field in formTemplate.FormFields)
