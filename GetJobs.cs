@@ -1,6 +1,6 @@
             // Example of using GetJobs with filter
             // This method exists starting in Version 5 of the JobTracker API
-            // Prior to Version 5, you had to llop through all jobs to find the ones you want
+            // Prior to Version 5, you had to loop through all jobs to find the ones you want
 
             // var DB = "yourdatabasename";
             var JTURL = "https://" + DB + ".moraware.net/";
